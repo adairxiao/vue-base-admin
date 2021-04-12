@@ -1,10 +1,18 @@
+/*
+ * @Author: your name
+ * @Date: 2021-04-12 11:15:20
+ * @LastEditTime: 2021-04-12 14:03:05
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \demo-uie:\jsproject\vue\vue-base-admin\src\router\index.js
+ */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
+export const constantRoutes = [
   {
     path: '/',
     name: 'Home',
@@ -20,8 +28,9 @@ const routes = [
   }
 ]
 
-const router = new VueRouter({
-  routes
+export const asyncRouters=[]
+
+export default new VueRouter({
+  routes:constantRoutes
 })
 
-export default router
